@@ -34,6 +34,6 @@
       ];
     };
 
-    homeModules.default = import ./hm-module.nix;
+    homeModules.default = import ./hm-module.nix self;
   };
 }
