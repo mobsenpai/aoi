@@ -6,8 +6,8 @@ self: {
 }: let
   cfg = config.programs.astal;
 in {
-  options.programs.astal = {
-    enable = lib.mkEnableOption "astal";
+  options.programs.aoi = {
+    enable = lib.mkEnableOption "aoi";
     colors = lib.mkOption {
       type = lib.types.attrs;
       default = {
@@ -46,7 +46,7 @@ in {
   };
 
   config = lib.mkIf cfg.enable {
-    #home.packages = [self.packages.${pkgs.system}.astal];
+    home.packages = [self.packages.${pkgs.system}.default];
     xdg.configFile."astal/scss/themes/astel.scss".text = ''
       $ac-red: #${config.programs.astal.colors.blue1};
       $ac-green: #AAF9B0;
