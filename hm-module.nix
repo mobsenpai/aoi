@@ -48,7 +48,7 @@ in {
   config = lib.mkIf cfg.enable {
     home.packages = [self.packages.${pkgs.system}.default];
     xdg.configFile."astal/scss/themes/astel.scss".text = ''
-      $ac-red: #${config.programs.astal.colors.blue1};
+      $ac-red: #${config.programs.aoi.colors.blue1};
       $ac-green: #AAF9B0;
       $ac-yellow: #F9F7AA;
       $ac-blue: #A8C7FA;
