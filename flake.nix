@@ -17,7 +17,7 @@
   in {
     packages.${system}.default = astal.lib.mkLuaPackage {
       inherit pkgs;
-      name = "my-shell"; # how to name the executable
+      name = "aoi"; # how to name the executable
       src = ./.; # should contain init.lua
 
       # add extra glib packages or binaries
