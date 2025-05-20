@@ -4,7 +4,7 @@ self: {
   pkgs,
   ...
 }: let
-  cfg = config.programs.astal;
+  cfg = config.programs.aoi;
 in {
   options.programs.aoi = {
     enable = lib.mkEnableOption "aoi";
