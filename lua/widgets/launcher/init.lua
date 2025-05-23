@@ -1,5 +1,4 @@
--- local utf8 = require("lua-utf8")
-local utf8 = require("utf8")
+local utf8 = require("lua-utf8")
 local astal = require("astal")
 local Variable = astal.Variable
 local bind = astal.bind

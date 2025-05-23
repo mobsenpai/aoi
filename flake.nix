@@ -21,17 +21,22 @@
       src = ./.; # should contain init.lua
 
       # add extra glib packages or binaries
-      extraPackages = [
-        astal.packages.${system}.battery
-        pkgs.dart-sass
-        astal.packages.${system}.hyprland # For AstalHyprland
-        astal.packages.${system}.tray # For AstalTray
-        astal.packages.${system}.astal3
-        astal.packages.${system}.wireplumber
-        astal.packages.${system}.notifd
-        pkgs.glib
-        pkgs.lua52Packages.luautf8
-      ];
+      extraPackages = with astal.packages.${system};
+        [
+          battery
+          hyprland
+          tray
+          astal3
+          wireplumber
+          notifd
+        ]
+        ++ (with pkgs; [
+          dart-sass
+        ])
+        ++ (with pkgs.lua52Packages; [
+          cjson
+          luautf8
+        ]);
     };
 
     homeModules.default = import ./hm-module.nix self;
