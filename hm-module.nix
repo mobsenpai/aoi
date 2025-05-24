@@ -1,5 +1,4 @@
 self: {
-  inputs,
   lib,
   config,
   pkgs,
@@ -13,8 +12,8 @@ in {
 
   config = lib.mkIf cfg.enable {
     home.packages = [
-      self.astal.packages.${pkgs.system}.default
       self.packages.${pkgs.system}.default
+      self.inputs.astal.packages.${pkgs.system}.default
     ];
   };
 }
