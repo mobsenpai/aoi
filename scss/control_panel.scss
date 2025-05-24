@@ -15,16 +15,16 @@ window.control-panel {
     padding: 15px;
 
     .notification-list {
-      scrollable > viewport {
+      scrollable>viewport {
         all: unset;
       }
 
       .header {
         .title {
-          font-weight: bold;
+          font-weight: normal;
           color: $fg;
           padding-left: 8px;
-          font-size: 13pt;
+          font-size: 11pt;
         }
 
         .clear-button {
@@ -49,7 +49,7 @@ window.control-panel {
 
       .empty-massage {
         label {
-          font-size: 17pt;
+          font-size: 15pt;
           color: color.adjust($fg, $alpha: -0.5);
         }
       }
@@ -70,7 +70,7 @@ window.control-panel {
           margin: 5px;
 
           .app-name {
-            font-weight: bold;
+            font-weight: normal;
           }
 
           .time {
@@ -146,10 +146,11 @@ window.control-panel {
 
     .audio-sliders {
       background-color: $bg-alt;
-      padding: 15px;
+      padding: 2px;
       border-radius: 10px;
-      
-      .speaker, .microphone {
+
+      .speaker,
+      .microphone {
         .volume-slider {
           trough {
             background-color: $bg-urg;
@@ -199,7 +200,7 @@ window.control-panel {
             background-color: color.adjust($fg, $alpha: -0.7);
           }
 
-          &.muted > label {
+          &.muted>label {
             color: color.adjust($fg, $alpha: -0.5);
           }
         }
@@ -211,13 +212,14 @@ window.control-panel {
       }
     }
 
-    .wifi-button, .bluetooth-button {
+    .wifi-button,
+    .bluetooth-button {
       border-radius: 8px;
 
       .toggle-button {
         margin: 0;
         border-radius: 8px 0 0 8px;
-        padding: 10px;
+        padding: 2px;
 
         label {
           margin-left: 10px;
@@ -227,7 +229,7 @@ window.control-panel {
       .arrow-button {
         margin: 0;
         border-radius: 0 8px 8px 0;
-        padding: 10px 0 10px 0;
+        padding: 2px 0 2px 0;
 
         icon {
           min-width: 40px;

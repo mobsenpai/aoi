@@ -24,7 +24,7 @@ local function WifiButton()
 					icon = "network-wireless-symbolic"
 				},
 				Widget.Label {
-					width_chars = 15,
+					width_chars = 5,
 					xalign = 0,
 					justify = "FILL",
 					halign = "START",
@@ -58,7 +58,7 @@ local function BluetoothButton()
 					icon = "bluetooth-symbolic"
 				},
 				Widget.Label {
-					width_chars = 15,
+					width_chars = 8,
 					xalign = 0,
 					justify = "FILL",
 					halign = "START",
@@ -97,7 +97,7 @@ return function()
 		end,
 		Widget.Box {
 			Widget.EventBox {
-				width_request = 4000,
+				width_request = 200,
 				expand = true,
 				on_click = hide
 			},
@@ -110,17 +110,17 @@ return function()
 				},
 				Widget.Box {
 					class_name = "mainbox",
-					width_request = 500,
-					height_request = 800,
+					width_request = 200,
+					height_request = 600,
 					vertical = true,
-					spacing = 8,
+					spacing = 2,
 					NotificationList(),
 					Gtk.Separator {
 						visible = true
 					},
 					AudioSliders(),
 					Widget.Box {
-						spacing = 8,
+						spacing = 2,
 						hexpand = true,
 						WifiButton(),
 						BluetoothButton()
