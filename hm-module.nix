@@ -13,7 +13,7 @@ in {
 
   config = lib.mkIf cfg.enable {
     home.packages = [
-      inputs.astal.packages.${pkgs.system}.default
+      self.astal.packages.${pkgs.system}.default
       self.packages.${pkgs.system}.default
     ];
   };
