@@ -61,8 +61,8 @@ return function()
 				end,
 				Widget.Icon {
 					icon = bind(microphone, "mute"):as(function(m)
-						return m and "audio-input-microphone-muted-symbolic"
-							or "audio-input-microphone-high-symbolic"
+						return m and "microphone-sensitivity-muted-symbolic"
+							or "audio-input-microphone-symbolic"
 					end)
 				}
 			},

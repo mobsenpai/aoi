@@ -50,7 +50,7 @@ return function()
 						end
 					end,
 					Widget.Icon {
-						icon = "trash-symbolic"
+						icon = "user-trash-symbolic"
 					}
 				}
 			}

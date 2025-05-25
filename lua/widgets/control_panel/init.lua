@@ -39,7 +39,7 @@ local function WifiButton()
 					visible = true
 				},
 				Widget.Icon {
-					icon = "arrow-right"
+					icon = "go-down-symbolic"
 				}
 			}
 		}
@@ -73,7 +73,7 @@ local function BluetoothButton()
 					visible = true
 				},
 				Widget.Icon {
-					icon = "arrow-right"
+					icon = "go-down-symbolic"
 				}
 			}
 		}
@@ -97,7 +97,7 @@ return function()
 		end,
 		Widget.Box {
 			Widget.EventBox {
-				width_request = 200,
+				width_request = 340,
 				expand = true,
 				on_click = hide
 			},
@@ -110,17 +110,17 @@ return function()
 				},
 				Widget.Box {
 					class_name = "mainbox",
-					width_request = 200,
+					width_request = 340,
 					height_request = 600,
 					vertical = true,
-					spacing = 2,
+					spacing = 4,
 					NotificationList(),
 					Gtk.Separator {
 						visible = true
 					},
 					AudioSliders(),
 					Widget.Box {
-						spacing = 2,
+						spacing = 4,
 						hexpand = true,
 						WifiButton(),
 						BluetoothButton()

@@ -17,7 +17,7 @@ local function LauncherButton()
 			if launcher then launcher:show() end
 		end,
 		Widget.Icon {
-			icon = "search-symbolic"
+			icon = "open-menu-symbolic"
 		}
 	}
 end
@@ -128,7 +128,7 @@ local function SysTray()
 			end,
 			Widget.Icon {
 				icon = bind(tray_visibility):as(function(v)
-					return v and "arrow-right" or "arrow-left"
+					return v and "go-next-symbolic" or "go-previous-symbolic"
 				end)
 			}
 		},
@@ -181,7 +181,7 @@ local function ControlPanelButton()
 			if panel then panel:show() end
 		end,
 		Widget.Icon {
-			icon = "multimedia-equalizer-symbolic"
+			icon = "preferences-system-symbolic"
 		}
 	}
 end
