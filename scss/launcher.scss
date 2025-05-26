@@ -35,8 +35,8 @@ window.launcher {
       transition: 200ms;
 
       label.name {
-        font-size: 13pt;
-        font-weight: bold;
+        font-size: 11pt;
+        font-weight: normal;
       }
 
       &:focus {
@@ -53,7 +53,7 @@ window.launcher {
     box.not-found {
       label {
         color: color.adjust($fg, $alpha: -0.5);
-        font-size: 17pt;
+        font-size: 15pt;
       }
     }
   }

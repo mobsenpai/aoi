@@ -135,8 +135,8 @@ return function()
 				},
 				Widget.Box {
 					vertical = true,
-					width_request = 400,
-					height_request = 480,
+					width_request = 300,
+					height_request = 380,
 					class_name = "mainbox",
 					entry,
 					Widget.Scrollable {
